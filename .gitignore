@@ -1,0 +1,23 @@
+# Ignorar o ambiente virtual
+venv-gerenciador-tarefas/
+
+# Ignorar arquivos temporários do Python
+__pycache__/
+*.py[cod]
+*.so
+*.log
+
+# Ignorar banco SQLite local
+*.sqlite3
+db.sqlite3
+
+# Ignorar variáveis de ambiente
+.env
+
+# Ignorar configurações do VSCode e outros editores
+.vscode/
+.idea/
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
