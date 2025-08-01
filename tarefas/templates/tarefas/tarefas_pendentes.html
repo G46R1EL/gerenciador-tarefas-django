@@ -3,8 +3,15 @@
 {% block title %}Tarefas Pendentes{% endblock %}
 
 {% block content %}
+    <div class="h-100 p-5 bg-light border rounded-3">
+
+
+    </div>
+
+
+
     <h1>Tarefas Pendentes</h1>
-    <div class="list-group"></div>
+    <div class="list-group">
         {% for tarefa in tarefas_pendentes %}
             {% if tarefa.prioridade == 'alta' %}
             <button type="button" class="list-group-item list-group-item-danger list-group-item-action" data-bs-toggle="modal" data-bs-target="#modal{{ tarefa.id }}">
@@ -33,6 +40,6 @@
                 </div>
               </div>
             </div>
-
         {% endfor %}
+      </div>
 {% endblock %}
